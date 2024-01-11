@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>football club legends cardcards</title>
+    </head>
+    <style>
+        body{
+            background-image:url(https://tse1.mm.bing.net/th?id=OIP.hZeAoyJyZKbxWfKSD-fntAHaEK&pid=Api&P=0&h=180) ;
+        }
+        .container{
+            display: grid;
+            grid-template-rows: 300px 300px ;
+            grid-template-columns: 200px 200px 200px 200px 200px;
+            row-gap: 30px;
+            column-gap: 50px;
+        }
+        img{
+            height: 290px;
+            width: 190px;
+            position: relative;
+        }
+        .ronaldopic{ 
+            height: 110px;
+            width:100px;
+            position: absolute;
+            top:55px;
+            left:70px;
+        }
+        .ronaldorating{
+            font-size:20px;
+            position: absolute;
+            top: 60px;
+            left:52.5px;  
+        }
+        .ronaldoposition{
+            font-size: 17px;
+            position:absolute;
+            top:92px;
+            left:50px;
+         }
+         .ronaldoname{
+            color:aliceblue;
+            font-size: 18px;
+            position: absolute;
+            top:150px;
+            left: 54px;
+         }
+        .ronaldolist{
+            font-size: 15px;
+            color: rgb(226, 226, 226);
+            list-style: none;
+            position: absolute;
+            top: 173.5px;
+            left: 16.8px; 
+        }
+        .messipic{
+            height: 110px;
+            width:150px;
+            position: absolute;
+            top:55px;
+            left:290px;
+        }
+        .messirating{
+            color:rgb(221, 221, 242);
+            font-size:20px;
+            position: absolute;
+            top: 60px;
+            left:300px;    
+        }
+        .messiposition{
+            color:rgb(221, 221, 242);
+            font-size: 16px;
+            position:absolute;
+            top:92px;
+            left:295px; 
+        }
+        .logo{
+            height: 20px;
+            width:20px;
+        }
+        .ml{
+            position: absolute;
+            top:134px;
+            left:298px; 
+        }
+        .messiname{
+            color:aliceblue;
+            font-size: 18px;
+            position: absolute;
+            top:146px;
+            left: 325px;
+        }
+        .messilist{
+            font-size: 15px;
+            color: rgb(226, 226, 226);
+            list-style: none;
+            position: absolute;
+            top: 173.5px;
+            left: 270px; 
+        }
+        .neymarpic{
+            height: 110px;
+            width:95px;
+            position: absolute;
+            top:55px;
+            left:580px;
+        }
+        .neymarrating{
+            color:rgb(221, 221, 242);
+            font-size:20px;
+            position: absolute;
+            top: 60px;
+            left:550px; 
+        }
+        .neymarposition{
+            color:rgb(221, 221, 242);
+            font-size: 16px;
+            position:absolute;
+            top:92px;
+            left:548px;
+        }
+        .nl{
+            position: absolute;
+            top:134px;
+            left:550px; 
+        }
+        .neymarname{
+            color:aliceblue;
+            font-size: 18px;
+            position: absolute;
+            top:146px;
+            left: 560px;
+        }
+        .neymarlist{
+            font-size: 15px;
+            color: rgb(226, 226, 226);
+            list-style: none;
+            position: absolute;
+            top: 173.5px;
+            left: 518px; 
+        }
+        .ozilpic{
+            height: 110px;
+            width:80px;
+            position: absolute;
+            top:55px;
+            left:830px;
+        }
+        .ozilrating{
+            color:rgb(4, 4, 4);
+            font-size:20px;
+            position: absolute;
+            top: 60px;
+            left:802px; 
+        }
+        .ozilposition{
+            color:rgb(11, 11, 11);
+            font-size: 16px;
+            position:absolute;
+            top:92px;
+            left:793px;
+        }
+        .ozilname{
+            color:aliceblue;
+            font-size: 18px;
+            position: absolute;
+            top:148px;
+            left: 835px;
+        }
+        .ozillist{
+            font-size: 15px;
+            color: rgb(226, 226, 226);
+            list-style: none;
+            position: absolute;
+            top: 173.5px;
+            left: 767px; 
+        }
+        .depic{
+            height: 140px;
+            width:180px;
+            position: absolute;
+            top:45px;
+            left:1013px;
+        }
+        .derating{
+            color:rgb(234, 228, 228);
+            font-size:20px;
+            position: absolute;
+            top: 60px;
+            left:1029px; 
+        }
+        .deposition{
+            color:rgb(247, 244, 244);
+            font-size: 16px;
+            position:absolute;
+            top:92px;
+            left:1020px;
+        }
+        .delist{
+            font-size: 15px;
+            color: rgb(7, 7, 7);
+            list-style: none;
+            position: absolute;
+            top: 173.5px;
+            left: 1020px; 
+        }
+        .mbappepic{
+            height: 110px;
+            width:110px;
+            position: absolute;
+            top:385px;
+            left:60px;
+        }
+        .mbapperating{
+            color:rgb(234, 228, 228);
+            font-size:20px;
+            position: absolute;
+            top: 380px;
+            left:50px; 
+        }
+        .mbappeposition{
+            color:rgb(247, 244, 244);
+            font-size: 16px;
+            position:absolute;
+            top:410px;
+            left:50px;
+        }
+        .mb{
+            position:absolute;
+            top:457px;
+            left:50px;
+        }
+        .mbappename{
+            color:aliceblue;
+            font-size: 18px;
+            position: absolute;
+            top:480px;
+            left: 65px;
+        }
+        .mbappelist{
+            font-size: 15px;
+            color: rgb(226, 226, 226);
+            list-style: none;
+            position: absolute;
+            top: 508px;
+            left: 15px; 
+        }
+        .belpic{
+            height: 110px;
+            width:80px;
+            position: absolute;
+            top:385px;
+            left:330px;
+        }
+        .belrating{
+            color:rgb(234, 228, 228);
+            font-size:20px;
+            position: absolute;
+            top: 380px;
+            left:299px; 
+        }
+        .belposition{
+            color:rgb(247, 244, 244);
+            font-size: 16px;
+            position:absolute;
+            top:410px;
+            left:297px;
+        }
+        .bl{
+            
+            position:absolute;
+            top:457px;
+            left:298px;
+        }
+        .belname{
+            color:aliceblue;
+            font-size: 18px;
+            position: absolute;
+            top:480px;
+            left: 310px;
+        }
+        .bellist{
+            font-size: 15px;
+            color: rgb(226, 226, 226);
+            list-style: none;
+            position: absolute;
+            top: 508px;
+            left: 270px; 
+        }
+        .lukapic{
+            height: 150px;
+            width:110px;
+            position: absolute;
+            top:385px;
+            left:560px;
+        }
+        .lukarating{
+            color:rgb(234, 228, 228);
+            font-size:20px;
+            position: absolute;
+            top: 380px;
+            left:545px; 
+        }
+        .lukaposition{
+            color:rgb(247, 244, 244);
+            font-size: 16px;
+            position:absolute;
+            top:410px;
+            left:542px;
+        }
+        .ll{
+            
+            position:absolute;
+            top:457px;
+            left:546px;
+        }
+        .lukaname{
+            color:aliceblue;
+            font-size: 18px;
+            position: absolute;
+            top:480px;
+            left: 570px;
+        }
+        .lukalist{
+            font-size: 15px;
+            color: rgb(226, 226, 226);
+            list-style: none;
+            position: absolute;
+            top: 508px;
+            left: 518px; 
+        }
+        .ramospic{
+            height: 130px;
+            width:100px;
+            position: absolute;
+            top:370px;
+            left:810px;
+        }
+        .ramosrating{
+            color:rgb(234, 228, 228);
+            font-size:20px;
+            position: absolute;
+            top: 380px;
+            left:795px; 
+        }
+        .ramosposition{
+            color:rgb(247, 244, 244);
+            font-size: 16px;
+            position:absolute;
+            top:410px;
+            left:793px;
+        }
+        .rl{
+            
+            position:absolute;
+            top:457px;
+            left:794px;
+        }
+        .ramosname{
+            color:aliceblue;
+            font-size: 18px;
+            position: absolute;
+            top:480px;
+            left: 820px;
+        }
+        .ramoslist{
+            font-size: 15px;
+            color: rgb(226, 226, 226);
+            list-style: none;
+            position: absolute;
+            top: 508px;
+            left: 770px; 
+        } 
+        .benzipic{
+            height: 130px;
+            width:100px;
+            position: absolute;
+            top:370px;
+            left:1080px;
+        }
+        .benzirating{
+            color:rgb(234, 228, 228);
+            font-size:20px;
+            position: absolute;
+            top: 380px;
+            left:1045px; 
+        }
+        .benziposition{
+            color:rgb(247, 244, 244);
+            font-size: 16px;
+            position:absolute;
+            top:410px;
+            left:1044px;
+        }
+        .zl{
+            
+            position:absolute;
+            top:457px;
+            left:1044px;
+        }
+        .benziname{
+            color:aliceblue;
+            font-size: 18px;
+            position: absolute;
+            top:480px;
+            left: 1065px;
+        }
+        .benzilist{
+            font-size: 15px;
+            color: rgb(226, 226, 226);
+            list-style: none;
+            position: absolute;
+            top: 508px;
+            left: 1020px; 
+        }
+    </style>
+    <body>
+     <div class="background">
+        <div class="container">
+            <div class="ronaldo">
+                <img src="https://th.bing.com/th/id/OIP.S8DAkCTNMp6OVqlIo9QEqAHaKW?rs=1&pid=ImgDetMain"/>
+                <img class="ronaldopic" src="https://www.footyrenders.com/render/Cristiano-Ronaldo-UCL-1-390x416.png"/>
+                <h3 class="ronaldorating">99</h3>
+                <h3 class="ronaldoposition">LW</h3>
+                <h3 class="ronaldoname">RONALDO</h3>
+                <ul class="ronaldolist">
+                    <li>98PAC  98DRI  </li>
+                    <li>99SHO  50DEF</li>
+                    <li>92PAS  94PHY</li>
+                </ul>
+            </div>
+            <div class="messi">
+                <img src="https://th.bing.com/th/id/OIP.1HA88D06SxYD5AMtesuyPwHaLH?pid=ImgDet&w=204&h=306&c=7&dpr=1.3"/>
+                <img class="messipic" src="https://www.pngall.com/wp-content/uploads/5/Lionel-Messi-PNG-Photo.png"/>
+                <h3 class="messirating">99</h3>
+                <h3 class="messiposition">RW</h3>
+                <img class="logo ml" src="https://tse1.mm.bing.net/th?id=OIP.edwu9bfqLbrWvp-g2Gl9sQAAAA&pid=Api&P=0&h=180"/>
+                <h3 class="messiname">MESSI</h3>
+                <ul class="messilist">
+                    <li>93PAC  99DRI  </li>
+                    <li>98SHO  43DEF</li>
+                    <li>97PAS  73PHY</li>
+                </ul>
+            </div>
+            <div class="neymar">
+                <img src="https://th.bing.com/th/id/OIP.1HA88D06SxYD5AMtesuyPwHaLH?pid=ImgDet&w=204&h=306&c=7&dpr=1.3"/>
+                <img class="neymarpic" src="https://clipart.info/images/ccovers/1503415028Neymar-PNG-Transparent-Image.png">
+                <h3 class="neymarrating">95</h3>
+                <h3 class="neymarposition">LW</h3>
+                <img class="logo nl" src="https://tse1.mm.bing.net/th?id=OIP.edwu9bfqLbrWvp-g2Gl9sQAAAA&pid=Api&P=0&h=180"/>
+                <h3 class="neymarname">NEYMAR</h3>
+                <ul class="neymarlist">
+                    <li>98PAC  99DRI  </li>
+                    <li>94SHO  45DEF</li>
+                    <li>85PAS  75PHY</li>
+                </ul>
+            </div>
+            <div class="ozil">
+                <img src="https://th.bing.com/th/id/OIP.S8DAkCTNMp6OVqlIo9QEqAHaKW?rs=1&pid=ImgDetMain"/>
+                <img class="ozilpic" src="https://www.footyrenders.com/render/10229431705_7c9e423577_o.png"/>
+                <h3 class="ozilrating">90</h3>
+                <h3 class="ozilposition">CAM</h3>
+                <h3 class="ozilname">Özil</h3>
+                <ul class="ozillist">
+                    <li>84PAC  92DRI  </li>
+                    <li>85SHO  28DEF</li>
+                    <li>93PAS  70PHY</li>
+            </div>
+            <div class="debruyne">
+                <img src="https://i.pinimg.com/originals/f1/d1/ab/f1d1ab33cc6a319679cd6a5730fc80f8.png"/>
+                <img class="depic" src="https://th.bing.com/th/id/OIP.kSIHFHgPBllsIucIa5F_UwHaNK?w=115&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"/>
+                <h3 class="derating">99</h3>
+                <h3 class="deposition">CAM</h3>
+                <ul class="delist">
+                    <li>92PAC  98DRI  </li>
+                    <li>97SHO  90DEF</li>
+                    <li>99PAS   95PHY</li>
+            </div>
+            <div class="mbappe">
+                <img src="https://i.redd.it/g5po56vzzkc61.png"/>
+                <img class="mbappepic" src="https://www.pngplay.com/wp-content/uploads/13/Mbappe-Transparent-Images.png"/>
+                <h3 class="mbapperating">98</h3>
+                <h3 class="mbappeposition">ST</h3>
+                <img class="logo mb" src="https://th.bing.com/th/id/OIP.DLgN8jJqr4HQmRT7mNokgAHaHa?w=181&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7"/>
+                <h3 class="mbappename">Mbappé</h3>
+                <ul class="mbappelist">
+                    <li>99PAC  98DRI  </li>
+                    <li>96SHO  55DEF</li>
+                    <li>93PAS   90PHY</li>
+            </div>
+            <div class="bellingham">
+                <img src="https://i.redd.it/g5po56vzzkc61.png"/>
+                <img class="belpic" src="https://www.footyrenders.com/render/jude-bellingham-27.png"/>
+                <h3 class="belrating">96</h3>
+                <h3 class="belposition">CM</h3>
+                <img class="logo bl" src="https://th.bing.com/th/id/OIP.uavhqbkFuo9uGabiCoNiiQAAAA?rs=1&pid=ImgDetMain"/>
+                <h3 class="belname">Bellingham</h3>
+                <ul class="bellist">
+                    <li>90PAC  96DRI  </li>
+                    <li>90SHO  90DEF</li>
+                    <li>93PAS   93PHY</li>
+            </div>
+            <div class="modric">
+                <img src="https://i.redd.it/g5po56vzzkc61.png"/>
+                <img class="lukapic" src="https://cdn.futbin.com/content/fifa20/img/players/p67285867.png"/>
+                <h3 class="lukarating">99</h3>
+                <h3 class="lukaposition">CM</h3>
+                <img class="logo ll" src="https://th.bing.com/th/id/OIP.uavhqbkFuo9uGabiCoNiiQAAAA?rs=1&pid=ImgDetMain"/>
+                <h3 class="lukaname">Modrić</h3>
+                <ul class="lukalist">
+                    <li>90PAC  99DRI  </li>
+                    <li>94SHO  94DEF</li>
+                    <li>99PAS   90PHY</li>
+            </div>
+            <div class="Ramos">
+                <img src="https://i.redd.it/g5po56vzzkc61.png"/>
+                <img class="ramospic" src="https://www.footyrenders.com/render/Sergio-Ramos-Real-Madrid-2.png"/>
+                <h3 class="ramosrating">99</h3>
+                <h3 class="ramosposition">CB</h3>
+                <img class="logo rl" src="https://th.bing.com/th/id/OIP.uavhqbkFuo9uGabiCoNiiQAAAA?rs=1&pid=ImgDetMain"/>
+                <h3 class="ramosname">Ramos</h3>
+                <ul class="ramoslist">
+                    <li>94PAC  89DRI  </li>
+                    <li>85SHO  99DEF</li>
+                    <li>89PAS   97PHY</li>
+            </div>
+            <div class="benzama">
+                <img src="https://i.redd.it/g5po56vzzkc61.png"/>
+                <img class="benzipic" src="https://www.footyrenders.com/render/karim-benzema-132.png"/>
+                <h3 class="benzirating">97</h3>
+                <h3 class="benziposition">ST</h3>
+                <img class="logo zl" src="https://th.bing.com/th/id/OIP.uavhqbkFuo9uGabiCoNiiQAAAA?rs=1&pid=ImgDetMain"/>
+                <h3 class="benziname"> Benzama </h3>
+                <ul class="benzilist">
+                    <li>92PAC  96DRI  </li>
+                    <li>98SHO  48DEF</li>
+                    <li>95PAS   94PHY</li>
+            </div>
+            
+        </div>
+     </div>
+    </body>
+
+</html>
